@@ -4,14 +4,14 @@
     "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj": {
+    "/Users/cano/CanoSoft/test/test.domain/test.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj",
-        "projectName": "test.infrastructure",
-        "projectPath": "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj",
+        "projectUniqueName": "/Users/cano/CanoSoft/test/test.domain/test.domain.csproj",
+        "projectName": "test.domain",
+        "projectPath": "/Users/cano/CanoSoft/test/test.domain/test.domain.csproj",
         "packagesPath": "/Users/cano/.nuget/packages/",
-        "outputPath": "/Users/cano/CanoSoft/test/test.infrastructure/obj/",
+        "outputPath": "/Users/cano/CanoSoft/test/test.domain/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -40,6 +40,86 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj",
+        "projectName": "test.infrastructure",
+        "projectPath": "/Users/cano/CanoSoft/test/test.infrastructure/test.infrastructure.csproj",
+        "packagesPath": "/Users/cano/.nuget/packages/",
+        "outputPath": "/Users/cano/CanoSoft/test/test.infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/cano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/cano/CanoSoft/test/test.domain/test.domain.csproj": {
+                "projectPath": "/Users/cano/CanoSoft/test/test.domain/test.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
